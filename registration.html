@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- Student Details
+
+Authors: Anukul Sharma;	Samir Babu Gharti; Yam Poudel
+Module: Web Design and Deveolpment
+ 
+
+  -->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Membership</title>
+    <link rel="stylesheet" type="text/css" href="css/mainstyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id="outerwrapper">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<table>
+				
+			  		
+				  <tr align="right">
+					  <th align="left"><i class="fa fa-search fa-fw">&nbsp;&nbsp;</i><input type="text" name="search" placeholder="Looking for Something !?"></th>
+				    <th width="40%">Follow us on &nbsp;&nbsp;</th> 
+				    <th width="8%"><font color=":#4267b2">&nbsp;&nbsp;<a href="https://www.facebook.com/townsvillemusic/"><i class="fa fa-facebook fa-fw"></i>&nbsp;&nbsp;Facebook</a></font></th> 
+				    <th width="6%"><a href="about.html" class="twitter"><font color="#1DA1F2">&nbsp;&nbsp;<i class="fa fa-twitter fa-fw"></i>&nbsp;&nbsp;Twitter</font></a></th>
+				    <th width="8%"><a href="contact.html" class="instagram"><font color="#fb3958">&nbsp;&nbsp;<i class="fa fa-instagram fa-fw"></i>&nbsp;&nbsp;Instagram</font></a></th>
+				    <th width="7%"><a href="Guidelines.html" class="youtube"><font color="red">&nbsp;&nbsp;<i class="fa fa-youtube fa-fw"></i>&nbsp;&nbsp;Youtube</font></a></th>
+					
+				  
+				  </tr>
+				  
+				</table>
+				<br><br>
+				
+				<!-- breadcrumbs  -->
+				
+						You are Here &nbsp;&nbsp; <i class="fa fa-chevron-right"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home &nbsp;&nbsp; <i class="fa fa-caret-right"></i>&nbsp;&nbsp;</a>
+						<a href="registration.html"><i class="fa fa-address-card fa-fw" aria-hidden="true"></i> Registration&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						
+						
+					
+			</div>
+			<br><br>
+			<div align="center"><img src="images/logo_final.png" width="25%"></div><br><br>
+			<h1 align="center">Registration</h1>
+			<section class="home-about">
+				<table>
+				  <tr>
+				    <th width="50%" >
+					
+				    	
+				    	<h1>Registration! </h1> <br>
+	
+
+    <form action="post" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+			<Br><br>
+        <p>
+            <label for="name">First Name: *<img src="images/cross.png" alt="X" name="fnameTick" width="12" height="12"
+                                              id="fnameTick"/></label>
+            <input type="text" name="name" id="fname" size="40" placeholder="first name" autofocus onKeyUp="fnameEntered(this);"/>
+        </p>
+		<p>
+            <label for="name">Last Name: *<img src="images/cross.png" alt="X" name="lnameTick" width="12" height="12"
+                                              id="lnameTick"/></label>
+            <input type="text" name="name" id="lname" size="40" placeholder="last name" autofocus onKeyUp="lnameEntered(this);"/>
+        </p>
+		 <p>
+            <label for="password">Password: *<img src="images/cross.png" alt="X" name="passwordTick" width="12" height="12"
+                                              id="passwordTick"/></label>
+            <input type="password" name="password" id="txtNewPassword" size="40" placeholder="Password">
+
+        </p>
+		<p>
+            <label for="password">Confirm Password: *<img src="images/cross.png" alt="X" name="repasswordTick" width="12" height="12"
+                                              id="passwordTick"/></label>
+            <input type="password" name="repassword" id="repassword" size="40" placeholder="Confirm Password" autofocus onChange="isPasswordMatch();" />
+        </p>
+        <div id="divCheckPassword"></div>
+        <br>
+            <label for="email">Email: *<img src="images/cross.png" alt="X" name="EmailTick" width="12" height="12"
+                                              id="EmailTick"/></label>
+			<input type="text" name="email" id="email" size="40" placeholder="email" style="color:#000000" onFocus="changeStyle(this)"
+               onBlur="changeColor(this, '#990099')" autofocus onKeyUp="emailEntered(this);"/>
+        <br>
+			<label for="phone">Phone: *<img src="images/cross.png" alt="X" name="PhoneTick" width="12" height="12"
+									 id="PhoneTick"/></label>
+			<input type="text" name="phone" id="phone" size="40" placeholder="phone number" style="color:#000000"onFocus="changeStyle(this)"
+               onBlur="changeColor(this, '#990099')" autofocus onKeyUp="phoneEntered(this);"/>
+        <br>
+			<label for="address">Postal Address: *<img src="images/cross.png" alt="X" name="addressTick" width="12" height="12"
+									 id="addressTick"/></label>
+			<input type="text" name="address" id="address" size="40" placeholder="postal address" style="color:#000000"onFocus="changeStyle(this)"
+               onBlur="changeColor(this, '#990099')" autofocus onKeyUp="addressEntered(this);"/>
+        <br>
+		
+			<label>Gender :*<img src="images/cross.png" alt="X" name="rateTick" width="12"
+                                                  height="12" id="rateTick"/></label>
+		<fieldset>										  
+            <input type="radio" name="gender" id="male" value="male" onclick="checkSiteRating()"/>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" onclick="checkSiteRating()"/>
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="other" value="other" onclick="checkSiteRating()"/>
+            <label for="Other">Other</label>
+		</fieldset>	
+
+		<br>
+		
+
+        <div><span id="message"></span></div>
+    </form>
+	<div id="submission">
+				<a href="registrationc.html"><div id="btn2" type="submit">Next</div> </a>
+				<div class="btn" type="reset">Reset</div>
+		</div>
+	</th>
+				    <th width="10%" align="center">
+				    	
+				    	<h2>OR</h2>
+						
+					
+					</th>
+				    <th width="40%" align="left">
+				    	<h1 align="center">Be Social ! </h1><br>
+						
+							<div align="center">
+								<img src="images/facebook_btn.png" width="75%">
+								<img src="images/twitter_btn.png" width="75%">
+								<img src="images/google_btn.png" width="75%">
+								<h2> <u>Apply for Membership Now!</u></h2>	 
+							</div>
+						
+					</th>
+				  </tr>
+				  
+				</table>
+				
+			</section>
+
+	<script src="js/scripts.js"></script>
+	<section class="contact">
+				<!-- Register Block -->
+				
+						
+						
+				    </th>
+				  </tr>
+				  
+				</table>
+				<br><br>			
+				
+				    </th>
+				  </tr>
+				  
+				</table>	
+			</section>
+			<section>
+			<!-- Contact Us - Block -->
+				<table class="contact-info">
+				  <tr>
+				    <th width="25%"><h3><i class="fa fa-phone fa-fw"></i> 07 4724 2086</h3></th>
+				    <th width="25%"><h3><i class="fa fa-fax fa-fw"></i> 07 4724 2086</h3></th> 
+				    <th width="25%"><h3><i class="fa fa-envelope-o fa-fw"></i> tvcmusiccentre@ gmail.com</h3></th>
+				    <th width="25%"><h3><i class="fa fa-map-marker fa-fw"></i> 41 Boundary St, Townsville City</h3></th>
+				  </tr>
+				</table>
+			</section>
+			<section class="left">
+				
+			</section>
+			<section class="center">
+				<a href=""><img align="left" src="images/qld.png" width="80px" height="90px" alt=""></a>
+				<a href=""><img src="images/logo_final.png" class="logo" alt=""></a>
+				<a href=""><img align="right" src="images/qld-cityoftowns.png" width="75px" height="95px" alt=""></a>
+			
+			</section>
+
+			
+	</body>
+	</html>
