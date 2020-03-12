@@ -1,0 +1,154 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: x-large;
+}
+h4 {
+    font-style: italic;
+}
+#footer {
+    position: relative;
+    clear: both;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 5px 3px;
+    background-color: #2c2e38;
+    color: #d7ceb2;
+    text-shadow: 1px 1px 0 #5c5f72;
+    font-family: 'BazarMedium', Arial, sans-serif;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 5px -5px 5px #666;
+}
+
+#container {
+    margin: 2em;
+}
+#header {
+    padding: 5px 15px;
+    background-color: #2c2e38;
+    color: #d7ceb2;
+    text-shadow: 1px 1px 0 #2c2e38, 2px 2px 0 #5c5f72;
+    font: 1.5em 'BazarMedium', Arial, sans-serif;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 5px 5px 5px #666;
+}
+#footer a {
+    color:#FC3;
+}
+.smaller {
+    font-family: "Times New Roman", Times, serif;
+    font-size: small
+}
+.codeandnames {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    font-weight: bold
+}
+.highlightcolour {
+    color: #FF3300;
+    background-color: #FFFFFF
+}
+.breakhere {
+    page-break-before: always
+}
+.rightpanel {
+    clear: both;
+    float: right;
+    background-color: #f0f3ff;
+    margin-right: .2em;
+    width: 25%;
+    margin-left: 1em;
+    margin-bottom: 30px;
+    border: 1px solid #97bfff;
+}
+.rightpanel h4 {
+    background-color: #FFFFCC;
+    font-size: 0.8em;
+    margin: 0;
+    font-style: normal;
+    padding: 0.2em 0.3em;
+}
+.rightpanel p {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0.5em 0.3em 0.2em;
+}
+.notebox {
+    clear: both;
+    background-color: #FFFFCC;
+    border: #97bfff 1px solid;
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+}
+.notebox h4 {
+    font-size: 0.8em;
+    margin: 0;
+    font-style: normal;
+    padding: 0.2em 0.3em 0.2em 1em;
+    background-color: #97bfff;
+}
+.notebox p {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0.5em 0.3em 0.2em;
+}
+
+form th {
+    font-weight: normal;
+    text-align: right;
+}
+.nav {
+    background-color: #3F0;
+}
+#mainForm {
+    border: #2980b9 4px solid;
+    border-radius: 15px;
+    width: 700px;
+}
+#mainForm input, #mainForm select, #mainForm textarea, #mainForm fieldset {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 7px;
+}
+#mainForm label {
+    float: left;
+    clear:both;
+    width: 300px;
+    text-align:right;
+}
+#mainForm fieldset input, #mainForm fieldset label, #submission input {
+    float:none;
+    width:auto;
+}
+#submission {
+    text-align:center;
+    width: 620px;
+}
+br {
+    clear: left;
+}
+#message { padding-left: 5em; }
+.termsx {
+
+  overflow-y: scroll;
+
+  height: 300px;
+
+  width: 100%;
+
+  border: 1px solid #DDD;
+
+  padding: 10px;
+
+}
+
